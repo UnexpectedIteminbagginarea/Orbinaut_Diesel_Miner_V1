@@ -1,0 +1,53 @@
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Private configuration
+diesel-miner.sh
+config.json
+secrets.json
+
+# Transaction data
+diesel_mining_history.log
+last_diesel_tx.txt
+*.log
+
+# Wallet files
+wallet.json
+*.wallet
+mnemonic.txt
+seed.txt
+private_key.txt
+
+# API keys
+api_keys.txt
+sandshrew_config.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (if using npm packages)
+node_modules/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+
+# Output files
+nohup.out
+output.txt
+
+# Personal notes
+notes.txt
+TODO.txt
+personal_notes.md
