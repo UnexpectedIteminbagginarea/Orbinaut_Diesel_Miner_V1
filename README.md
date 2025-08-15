@@ -45,13 +45,13 @@ The AI will help you install dependencies, create wallets, and configure the scr
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/diesel-miner.git
+git clone https://github.com/UnexpectedIteminbagginarea/Orbinaut_Diesel_Miner_V1.git
 cd diesel-miner
 ```
 
 2. Install oyl-local CLI:
 ```bash
-git clone https://github.com/oyl-dynamics/oyl-sdk.git
+git clone https://github.com/Oyl-Wallet/oyl-sdk.git
 cd oyl-sdk
 npm install
 alias oyl-local="$(pwd)/bin/oyl.js"
@@ -221,7 +221,7 @@ Contributions are welcome! Please:
 - [Alkanes Protocol Documentation](https://alkanes-docs.vercel.app/docs/developers/quickstart)
 - [Sandshrew API](http://sandshrew.io) - Get your free API key here
 - [Bitcoin Mempool](https://mempool.space)
-- [oyl-sdk](https://github.com/oyl-dynamics/oyl-sdk)
+- [oyl-sdk](https://github.com/Oyl-Wallet/oyl-sdk)
 
 ## License
 

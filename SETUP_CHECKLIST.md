@@ -89,7 +89,7 @@ Continue with the manual setup below, or use Windsurf AI to help you through eac
 
 - [ ] Clone the oyl-sdk repository:
   ```bash
-  git clone https://github.com/oyl-dynamics/oyl-sdk.git
+  git clone https://github.com/Oyl-Wallet/oyl-sdk.git
   cd oyl-sdk
   npm install
   ```
@@ -275,7 +275,7 @@ yes | ./diesel-miner-template.sh monitor 10   # Monitor with 10 sat/vB
 
 - Alkanes Protocol Documentation
 - Bitcoin Mempool: https://mempool.space
-- oyl-sdk GitHub: https://github.com/oyl-dynamics/oyl-sdk
+- oyl-sdk GitHub: https://github.com/Oyl-Wallet/oyl-sdk
 
 ## Ready to Mine?
 
