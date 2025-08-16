@@ -11,6 +11,10 @@ A mempool-aware Bitcoin script for mining DIESEL tokens on the Alkanes protocol.
 - 🛡️ **Error Prevention**: Robust error handling and transaction validation
 - 📊 **Transaction History**: Logs all mining attempts for tracking
 
+## 📚 Essential Resources
+
+> **🔥 NEW TO ALKANES?** Start with the comprehensive [Alkanes SDK Documentation](https://alkanes-docs.vercel.app/docs/developers/sdk/) - your complete guide to building on the Alkanes protocol!
+
 ## How It Works
 
 DIESEL is a token on the Alkanes protocol that can be mined by submitting special Bitcoin transactions. After the upcoming protocol change, DIESEL rewards will be distributed proportionally based on transaction fees paid, eliminating the need to race for the first transaction in each block.
