@@ -67,9 +67,15 @@ check_balance() {
     
     if [ -z "$address" ]; then
         echo -e "${YELLOW}Could not extract address from wallet info${NC}"
-        # TODO: Add your fallback address here if needed
-        # address="YOUR_FALLBACK_ADDRESS_HERE"
-        return 1
+        echo -e "${YELLOW}Using hardcoded address as fallback${NC}"
+        # IMPORTANT: Uncomment and add your Native SegWit address (bc1q...) here
+        # address="bc1q_YOUR_NATIVE_SEGWIT_ADDRESS_HERE"
+        
+        # If address is still empty, exit with error
+        if [ -z "$address" ]; then
+            echo -e "${RED}ERROR: No address available. Please add your Native SegWit address at line 71${NC}"
+            return 1
+        fi
     fi
     
     echo -e "${BLUE}Wallet address: $address${NC}"
@@ -120,9 +126,15 @@ check_diesel_balance() {
     
     if [ -z "$address" ]; then
         echo -e "${YELLOW}Could not extract taproot address${NC}"
-        # TODO: Add your taproot address here if needed
-        # address="YOUR_TAPROOT_ADDRESS_HERE"
-        return 1
+        echo -e "${YELLOW}Using hardcoded address as fallback${NC}"
+        # IMPORTANT: Uncomment and add your Taproot address (bc1p...) here
+        # address="bc1p_YOUR_TAPROOT_ADDRESS_HERE"
+        
+        # If address is still empty, exit with error
+        if [ -z "$address" ]; then
+            echo -e "${RED}ERROR: No taproot address available. Please add your Taproot address at line 124${NC}"
+            return 1
+        fi
     fi
     
     echo -e "${BLUE}Checking tokens for: $address${NC}"

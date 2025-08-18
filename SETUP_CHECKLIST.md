@@ -148,13 +148,29 @@ Continue with the manual setup below, or use Windsurf AI to help you through eac
   SANDSHREW_PROJECT_ID="your_sandshrew_project_id_here"
   ```
 
-## Step 4: Update Script Configuration (Optional)
+## Step 4: Update Script Configuration (**IMPORTANT**)
 
-If you're using the template script, update these values:
+**⚠️ CRITICAL: You MUST add your wallet addresses as fallbacks in case automatic derivation fails!**
 
-- [ ] Line 39: Replace `YOUR_SANDSHREW_PROJECT_ID_HERE` with your actual project ID
-- [ ] Line 69: (Optional) Add a fallback Bitcoin address if needed
-- [ ] Line 126: (Optional) Add your taproot address if needed
+Update these values in the script:
+
+- [ ] Line 45: Replace `YOUR_SANDSHREW_PROJECT_ID_HERE` with your actual project ID
+- [ ] **Line 71: REQUIRED - Add your Native SegWit address (bc1q...)**
+  ```bash
+  # Replace this line:
+  # address="YOUR_FALLBACK_ADDRESS_HERE"
+  # With:
+  address="bc1q_your_actual_address_here"
+  ```
+- [ ] **Line 124: REQUIRED - Add your Taproot address (bc1p...)**
+  ```bash
+  # Replace this line:
+  # address="YOUR_TAPROOT_ADDRESS_HERE"
+  # With:
+  address="bc1p_your_actual_taproot_address_here"
+  ```
+
+**Why this is needed**: The automatic address derivation from mnemonic sometimes fails. Without these fallback addresses, the script will error out.
 
 ## Step 5: Make Script Executable
 
